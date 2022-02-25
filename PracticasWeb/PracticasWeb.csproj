@@ -67,14 +67,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConfirmationPage.aspx" />
     <Content Include="DemoCascadingDropDrownList.aspx" />
     <Content Include="DemoCheckBoxList.aspx" />
     <Content Include="DemoMultiViewControl.aspx" />
     <Content Include="DemoMultiViewControlandSubmitDataBase.aspx" />
+    <Content Include="DemoWizardControl.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfirmationPage.aspx.cs">
+      <DependentUpon>ConfirmationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmationPage.aspx.designer.cs">
+      <DependentUpon>ConfirmationPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DemoCascadingDropDrownList.aspx.cs">
       <DependentUpon>DemoCascadingDropDrownList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -102,6 +111,13 @@
     </Compile>
     <Compile Include="DemoMultiViewControlandSubmitDataBase.aspx.designer.cs">
       <DependentUpon>DemoMultiViewControlandSubmitDataBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DemoWizardControl.aspx.cs">
+      <DependentUpon>DemoWizardControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemoWizardControl.aspx.designer.cs">
+      <DependentUpon>DemoWizardControl.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
