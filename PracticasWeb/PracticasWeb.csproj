@@ -67,16 +67,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConfirmacionAltaEmpleado.aspx" />
     <Content Include="ConfirmationPage.aspx" />
     <Content Include="DemoCascadingDropDrownList.aspx" />
     <Content Include="DemoCheckBoxList.aspx" />
+    <Content Include="DemoEmpleadosBd.aspx" />
     <Content Include="DemoMultiViewControl.aspx" />
     <Content Include="DemoMultiViewControlandSubmitDataBase.aspx" />
+    <Content Include="DemoServerTransfer.aspx" />
+    <Content Include="DemoServerTransfer2.aspx" />
     <Content Include="DemoWizardControl.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfirmacionAltaEmpleado.aspx.cs">
+      <DependentUpon>ConfirmacionAltaEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmacionAltaEmpleado.aspx.designer.cs">
+      <DependentUpon>ConfirmacionAltaEmpleado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ConfirmationPage.aspx.cs">
       <DependentUpon>ConfirmationPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -98,6 +109,13 @@
     <Compile Include="DemoCheckBoxList.aspx.designer.cs">
       <DependentUpon>DemoCheckBoxList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DemoEmpleadosBd.aspx.cs">
+      <DependentUpon>DemoEmpleadosBd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemoEmpleadosBd.aspx.designer.cs">
+      <DependentUpon>DemoEmpleadosBd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DemoMultiViewControl.aspx.cs">
       <DependentUpon>DemoMultiViewControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -112,6 +130,20 @@
     <Compile Include="DemoMultiViewControlandSubmitDataBase.aspx.designer.cs">
       <DependentUpon>DemoMultiViewControlandSubmitDataBase.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DemoServerTransfer.aspx.cs">
+      <DependentUpon>DemoServerTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemoServerTransfer.aspx.designer.cs">
+      <DependentUpon>DemoServerTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DemoServerTransfer2.aspx.cs">
+      <DependentUpon>DemoServerTransfer2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemoServerTransfer2.aspx.designer.cs">
+      <DependentUpon>DemoServerTransfer2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DemoWizardControl.aspx.cs">
       <DependentUpon>DemoWizardControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -119,6 +151,7 @@
     <Compile Include="DemoWizardControl.aspx.designer.cs">
       <DependentUpon>DemoWizardControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EmpleadoClase.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
