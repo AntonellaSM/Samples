@@ -88,7 +88,7 @@
                     </tr>
                 </table>
 
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="auto-style1" DataKeyNames="IdEmpleado" DataSourceID="SqlDataSource1" OnRowDataBound="GridView1_RowDataBound" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="auto-style1" DataKeyNames="IdEmpleado" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4">
             <Columns>
                 <asp:CommandField ShowEditButton="True" />
                 <asp:TemplateField ShowHeader="True">
@@ -116,27 +116,7 @@
             <SortedDescendingCellStyle BackColor="#F6F0C0" />
             <SortedDescendingHeaderStyle BackColor="#7E0000" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SampleConnectionString %>" SelectCommand="SELECT * FROM [empleados]" DeleteCommand="DELETE FROM [empleados] WHERE [IdEmpleado] = @IdEmpleado" InsertCommand="INSERT INTO [empleados] ([Nombre], [Apellido], [Genero], [Gerencia], [Telefono], [Email]) VALUES (@Nombre, @Apellido, @Genero, @Gerencia, @Telefono, @Email)" UpdateCommand="UPDATE [empleados] SET [Nombre] = @Nombre, [Apellido] = @Apellido, [Genero] = @Genero, [Gerencia] = @Gerencia, [Telefono] = @Telefono, [Email] = @Email WHERE [IdEmpleado] = @IdEmpleado">
-            <DeleteParameters>
-                <asp:Parameter Name="IdEmpleado" Type="Int32" />
-            </DeleteParameters>
-            <InsertParameters>
-                <asp:Parameter Name="Nombre" Type="String" />
-                <asp:Parameter Name="Apellido" Type="String" />
-                <asp:Parameter Name="Genero" Type="String" />
-                <asp:Parameter Name="Gerencia" Type="String" />
-                <asp:Parameter Name="Telefono" Type="String" />
-                <asp:Parameter Name="Email" Type="String" />
-            </InsertParameters>
-            <UpdateParameters>
-                <asp:Parameter Name="Nombre" Type="String" />
-                <asp:Parameter Name="Apellido" Type="String" />
-                <asp:Parameter Name="Genero" Type="String" />
-                <asp:Parameter Name="Gerencia" Type="String" />
-                <asp:Parameter Name="Telefono" Type="String" />
-                <asp:Parameter Name="Email" Type="String" />
-                <asp:Parameter Name="IdEmpleado" Type="Int32" />
-            </UpdateParameters>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SampleConnectionString %>" SelectCommand="SELECT * FROM [empleados]">
         </asp:SqlDataSource>
     </form>
 </body>
